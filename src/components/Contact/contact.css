@@ -1,0 +1,8 @@
+.contactinfo > ul {
+	list-style-type: none;
+}
+.contactinfo > ul > li {
+	margin: 10px 0px 0px 0px;
+	font-size: small;
+	color: grey;
+}
