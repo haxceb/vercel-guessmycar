@@ -1,0 +1,31 @@
+.helpImg {
+    height: 250px;
+    width: 200px;
+    margin-top: 4em;
+}
+.helpHead
+{
+   
+    font-weight: bold;
+    color:#00a6a6;
+}
+.furnImg
+{
+    width:100px;
+    height: 120px;
+    margin-top: 1em;
+}
+.furnText{
+    text-align: justify;
+}
+.helpContact
+{
+    font-size: large;
+    
+}
+.icons
+{
+    color: #15dbcb;
+     font-size: 20px;
+      font-family:san-sarif;
+}
