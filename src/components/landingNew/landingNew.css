@@ -1,0 +1,28 @@
+/* Centered text */
+.centeredTitle {
+    position: absolute;
+    top: 27vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: wheat;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+  .centeredSlogan {
+    position: absolute;
+    top: 30vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: wheat;
+    font-size: 1.5vw;
+  }
+  img
+  {
+    
+    width: 100%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
