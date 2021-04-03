@@ -13,7 +13,7 @@ import LoungeBankenImage from '../../../images/sofa3.jpg';
 
 function HomePage() {
     return (
-        <div className="App">
+        <div>
             <PrimarySearchAppBar />
             <Grid container>
                 <Grid xs={12} style={{ height: '70vh' }}>
