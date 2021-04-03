@@ -1,21 +1,15 @@
 /* Centered text */
 .centeredTitle {
     position: absolute;
-    top: 51%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: wheat;
-    font-weight: bold;
+    font-weight: bolder;
 }
   .centeredSlogan {
     position: absolute;
-    top: 55%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
-    color: wheat;
-  }
-  img
-  {
-    width: 100%;
+    font-weight: bolder;
   }

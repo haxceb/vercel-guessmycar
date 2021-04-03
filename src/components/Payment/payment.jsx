@@ -10,5 +10,5 @@ const Payment = () => {
 		</div>
 	);
 };
-// style={{ 'max-width': 250, height: 236 }}
+
 export default Payment;
