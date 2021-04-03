@@ -223,31 +223,24 @@ export default function PrimarySearchAppBar() {
                         <MenuItem>
                             Overige
                         </MenuItem>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
+                        <MenuItem>
                             <Badge badgeContent={4} color="secondary">
                                 <MailIcon />
                             </Badge>
-                        </IconButton>
-                        <IconButton aria-label="show 4 new carts" color="inherit">
+                        </MenuItem>
+                        <MenuItem>
                             <Badge badgeContent={4} color="secondary">
                                 <ShoppingCartIcon />
                             </Badge>
-                        </IconButton>
-                        <IconButton aria-label="show 17 new notifications" color="inherit">
+                        </MenuItem>
+                        <MenuItem>
                             <Badge badgeContent={17} color="secondary">
                                 <NotificationsIcon />
                             </Badge>
-                        </IconButton>
-                        <IconButton
-                            edge="end"
-                            aria-label="account of current user"
-                            aria-controls={menuId}
-                            aria-haspopup="true"
-                            onClick={handleProfileMenuOpen}
-                            color="inherit"
-                        >
+                        </MenuItem>
+                        <MenuItem>
                             <AccountCircle />
-                        </IconButton>
+                        </MenuItem>
                     </div>
                     <div className={classes.sectionMobile}>
                         <IconButton
