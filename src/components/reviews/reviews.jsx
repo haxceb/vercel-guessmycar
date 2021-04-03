@@ -16,7 +16,7 @@ const UseStyles = makeStyles({
       height: 140,
     },
   });
-const reviews = (props) => {
+const Reviews = (props) => {
     const classes = UseStyles();
     return(
         
@@ -45,4 +45,4 @@ const reviews = (props) => {
 
 
     )};
-export default reviews;
+export default Reviews;

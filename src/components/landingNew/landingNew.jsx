@@ -2,10 +2,10 @@ import React,{Component} from 'react';
 import img from '../../media/mainImg.jpeg';
 import  './landingNew.css';
 
-const landingNew = (props) => {
+const LandingNew = (props) => {
     
     return (
-    <div className="">
+    <div className="container">
         
     <img className="img-fluid" src={img} width="100%"></img>
     <div className="flex-container">  
@@ -20,4 +20,4 @@ const landingNew = (props) => {
     </div>
     )};
     
-    export default landingNew;
+    export default LandingNew;

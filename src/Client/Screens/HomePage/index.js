@@ -1,56 +1,43 @@
-// import logo from './logo.svg';
-// import '../../../App.css';
-// import NavBar from './components/navBar';
-// import MediaCard from './components/MediaCard/mediacard';
-// import AllCards from './components/Cards/allCard';
-// import LowerFooter from './components/LowerFooter/lowerfoot';
-// import LoginForm from './Common/Login/login';
-// import NeedHelp from './components/needHelp/needHelp';
-// import Footer from './components/Footer/footer';
-// import { Grid, Typography, Snackbar, Divider } from "@material-ui/core";
-// import MuiAlert from '@material-ui/lab/Alert';
-// import Category from './Client/Components/Categories/SingleCategory';
-// import PrimarySearchAppBar from './components/Toolbar/toolbar';
-// import SingleCategory from './Client/Components/Categories/SingleCategory';
-// import CategoryCard from './Client/Components/Categories/categoryCard';
-// import LoungeBankenImage from './images/sofa.jpg';
-// import Landing from './components/landing/landing';
-// import OurPolicies from './components/Policies/OurPolicies';
-// import Testimonials from './components/UserExperience/userexperience';
-// import FooterAll from './components/Footer/FooterAll';
-// import NewsLetter from './components/NewsLetter/NewsLetter';
+import '../../../App.css';
+import PrimarySearchAppBar from '../../../components/Toolbar/toolbar';
+import CategoryCard from '../../Components/Categories/categoryCard';
+import AllCards from '../../../components/Cards/allCard';
+import Category from '../../Components/Categories/SingleCategory';
+import OurPolicies from '../../../components/Policies/OurPolicies';
+import Testimonials from '../../../components/UserExperience/userexperience';
+import NewsLetter from '../../../components/NewsLetter/NewsLetter';
+import FooterAll from '../../../components/Footer/FooterAll';
+import { Grid, Typography } from '@material-ui/core';
+import MuiAlert from '@material-ui/lab/Alert';
+import LoungeBankenImage from '../../../images/sofa3.jpg';
 
-// function Alert(props) {
-//     return <MuiAlert elevation={12} variant="filled" {...props} />;
-// }
+function HomePage() {
+    return (
+        <div className="App">
+            <PrimarySearchAppBar />
+            <Grid container>
+                <Grid xs={12} style={{ height: '70vh' }}>
+                    <CategoryCard title="GRATIS HOCKER" bgImage={LoungeBankenImage} />
+                </Grid>
+            </Grid>
+            <Category />
 
-// function HomePage() {
-//     return (
-//         <div className="App">
-//             <PrimarySearchAppBar />
-//             <Grid container>
-//                 <Grid xs={12} style={{ height: '70vh' }}>
-//                     <CategoryCard title="GRATIS HOCKER" bgImage={LoungeBankenImage} />
-//                 </Grid>
-//             </Grid>
-//             <Category />
+            <AllCards />
+            <OurPolicies />
+            <Grid container className="mt-4">
+                <Grid item xs={12}>
+                    <Typography variant="h4">
+                        What People Say
+          </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Testimonials />
+                </Grid>
+            </Grid>
+            <NewsLetter />
+            <FooterAll />
+        </div>
+    );
+}
 
-//             <AllCards />
-//             <OurPolicies />
-//             <Grid container className="mt-4">
-//                 <Grid item xs={12}>
-//                     <Typography variant="h4">
-//                         What People Say
-//           </Typography>
-//                 </Grid>
-//                 <Grid item xs={12}>
-//                     <Testimonials />
-//                 </Grid>
-//             </Grid>
-//             <NewsLetter />
-//             <FooterAll />
-//         </div>
-//     );
-// }
-
-// export default HomePage;
+export default HomePage;
