@@ -7,7 +7,7 @@ import LowerFooter from './components/LowerFooter/lowerfoot';
 import LoginForm from './Common/Login/login';
 import NeedHelp from './components/needHelp/needHelp';
 import Footer from './components/Footer/footer';
-import { Grid, Typography, Snackbar, Divider } from "@material-ui/core";
+import { Grid, Typography, Snackbar, Divider } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
 import Category from './Client/Components/Categories/SingleCategory';
 import PrimarySearchAppBar from './components/Toolbar/toolbar';
@@ -21,14 +21,11 @@ import NewsLetter from './components/NewsLetter/NewsLetter';
 import HomePage from './Client/Screens/HomePage';
 import LandingNew from './components/landingNew/landingNew';
 function Alert(props) {
-  return <MuiAlert elevation={12} variant="filled" {...props} />;
+	return <MuiAlert elevation={12} variant="filled" {...props} />;
 }
 
 function App() {
-  return (
-
-      <HomePage />
-  );
+	return <HomePage />;
 }
 
 export default App;

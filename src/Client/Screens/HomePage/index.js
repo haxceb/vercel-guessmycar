@@ -12,32 +12,30 @@ import MuiAlert from '@material-ui/lab/Alert';
 import LoungeBankenImage from '../../../images/sofa3.jpg';
 
 function HomePage() {
-    return (
-        <div className="App">
-            <PrimarySearchAppBar />
-            <Grid container>
-                <Grid xs={12} style={{ height: '70vh' }}>
-                    <CategoryCard title="GRATIS HOCKER" bgImage={LoungeBankenImage} />
-                </Grid>
-            </Grid>
-            <Category />
+	return (
+		<div className="App">
+			<PrimarySearchAppBar />
+			<Grid container>
+				<Grid xs={12} style={{ height: '70vh' }}>
+					<CategoryCard title="GRATIS HOCKER" bgImage={LoungeBankenImage} />
+				</Grid>
+			</Grid>
+			<Category />
 
-            <AllCards />
-            <OurPolicies />
-            <Grid container className="mt-4">
-                <Grid item xs={12}>
-                    <Typography variant="h4">
-                        What People Say
-          </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Testimonials />
-                </Grid>
-            </Grid>
-            <NewsLetter />
-            <FooterAll />
-        </div>
-    );
+			<AllCards />
+			{/* <OurPolicies /> */}
+			<Grid container className="mt-4">
+				<Grid item xs={12}>
+					<Typography variant="h4">What People Say</Typography>
+				</Grid>
+				<Grid item xs={12}>
+					<Testimonials />
+				</Grid>
+			</Grid>
+			<NewsLetter />
+			<FooterAll />
+		</div>
+	);
 }
 
 export default HomePage;
