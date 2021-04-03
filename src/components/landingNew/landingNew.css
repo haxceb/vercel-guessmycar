@@ -1,0 +1,48 @@
+/* Centered text */
+.centeredTitle {
+  left: 100vw;
+  transition: 1s;
+    left: 0;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+    color: wheat;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+  .centeredSlogan {
+    
+   
+    font-weight: bold;
+    color: wheat;
+    font-size: 1.5vw;
+  }
+  img
+  {
+    position: relative;
+    width: 100%;
+  }
+  .flex-container {
+    
+    display: flex;
+    padding: 1em;
+    top: 33vw;
+    left: 65vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  button
+  {
+    width: 8vw;
+  }
