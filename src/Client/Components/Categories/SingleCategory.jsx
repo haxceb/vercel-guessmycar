@@ -1,14 +1,14 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import ButtonBase from "@material-ui/core/ButtonBase";
-import Typography from "@material-ui/core/Typography";
-import CategoryCard from "./categoryCard";
-import HoekbankenImage from "../../../images/sofa3.jpg";
-import LoungesetsImage from "../../../images/sofa2.webp";
-import TuinsetsImage from "../../../images/sofa.jpg";
-import LoungeBankenImage from "../../../images/sofa2.webp";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import ButtonBase from '@material-ui/core/ButtonBase';
+import Typography from '@material-ui/core/Typography';
+import CategoryCard from './categoryCard';
+import HoekbankenImage from '../../../images/sofa3.jpg';
+import LoungesetsImage from '../../../images/sofa2.webp';
+import TuinsetsImage from '../../../images/sofa.jpg';
+import LoungeBankenImage from '../../../images/sofa2.webp';
 
 const SingleCategory = () => {
   return (
