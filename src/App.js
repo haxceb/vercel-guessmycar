@@ -20,14 +20,14 @@ import FooterAll from './components/Footer/FooterAll';
 import NewsLetter from './components/NewsLetter/NewsLetter';
 import HomePage from './Client/Screens/HomePage';
 import LandingNew from './components/landingNew/landingNew';
+import MainRoute from './routes';
 function Alert(props) {
   return <MuiAlert elevation={12} variant="filled" {...props} />;
 }
 
 function App() {
   return (
-
-      <HomePage />
+      <MainRoute />
   );
 }
 

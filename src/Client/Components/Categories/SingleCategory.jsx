@@ -14,7 +14,7 @@ const SingleCategory = () => {
   return (
     <div className="">
       <Grid className="mt-5 mb-3">
-        <Typography gutterBottom variant="h4" component="h2">
+        <Typography gutterBottom align="center" variant="h4" component="h2">
           Our Categories
         </Typography>
         <hr/>

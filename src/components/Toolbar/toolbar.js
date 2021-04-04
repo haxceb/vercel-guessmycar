@@ -177,11 +177,12 @@ export default function PrimarySearchAppBar() {
     );
 
     return (
-        <div className={`${classes.grow}`}>
-            <AppBar position="static">
-                <Toolbar>
-                    <Avatar variant="square" style={{ width: 160 }} src={Logo} />
-                    {/* <IconButton
+        <div className="container">
+            <div className="w-100">
+                <AppBar position="static">
+                    <Toolbar>
+                        <Avatar variant="square" style={{ width: 150 }} src={Logo} />
+                        {/* <IconButton
                         edge="start"
                         className={classes.menuButton}
                         color="inherit"
@@ -189,74 +190,67 @@ export default function PrimarySearchAppBar() {
                     >
                         <MenuIcon />
                     </IconButton> */}
-                    {/* <Typography className={classes.title} variant="h6" noWrap>
+                        {/* <Typography className={classes.title} variant="h6" noWrap>
                         Material-UI
           </Typography> */}
-                    <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                            <SearchIcon />
+                        <div className={classes.search}>
+                            <div className={classes.searchIcon}>
+                                <SearchIcon />
+                            </div>
+                            <InputBase
+                                placeholder="Search…"
+                                classes={{
+                                    root: classes.inputRoot,
+                                    input: classes.inputInput,
+                                }}
+                                inputProps={{ 'aria-label': 'search' }}
+                            />
                         </div>
-                        <InputBase
-                            placeholder="Search…"
-                            classes={{
-                                root: classes.inputRoot,
-                                input: classes.inputInput,
-                            }}
-                            inputProps={{ 'aria-label': 'search' }}
-                        />
-                    </div>
-                    <div className={classes.grow} />
+                        <div className={classes.grow} />
 
-                    <div className={classes.sectionDesktop}>
-                        <MenuItem>
-                            Loungesets
+                        <div className={classes.sectionDesktop}>
+                            <MenuItem>
+                                Loungesets
                         </MenuItem>
-                        <MenuItem>
-                            Tuinsets
+                            <MenuItem>
+                                Tuinsets
                         </MenuItem>
-                        <MenuItem>
-                            Hoekbanken
+                            <MenuItem>
+                                Hoekbanken
                         </MenuItem>
-                        <MenuItem>
-                            LoungeBanken
+                            <MenuItem>
+                                LoungeBanken
                         </MenuItem>
-                        <MenuItem>
-                            Overige
+                            <MenuItem>
+                                Overige
                         </MenuItem>
-                        <MenuItem>
-                            <Badge badgeContent={4} color="secondary">
-                                <MailIcon />
-                            </Badge>
-                        </MenuItem>
-                        <MenuItem>
-                            <Badge badgeContent={4} color="secondary">
-                                <ShoppingCartIcon />
-                            </Badge>
-                        </MenuItem>
-                        <MenuItem>
-                            <Badge badgeContent={17} color="secondary">
-                                <NotificationsIcon />
-                            </Badge>
-                        </MenuItem>
-                        <MenuItem>
-                            <AccountCircle />
-                        </MenuItem>
-                    </div>
-                    <div className={classes.sectionMobile}>
-                        <IconButton
-                            aria-label="show more"
-                            aria-controls={mobileMenuId}
-                            aria-haspopup="true"
-                            onClick={handleMobileMenuOpen}
-                            color="inherit"
-                        >
-                            <MoreIcon />
-                        </IconButton>
-                    </div>
-                </Toolbar>
-            </AppBar>
-            { renderMobileMenu}
-            { renderMenu}
-        </div >
+
+                            <MenuItem>
+                                <Badge badgeContent={4} color="secondary">
+                                    <ShoppingCartIcon />
+                                </Badge>
+                            </MenuItem>
+                            <MenuItem>
+                                <AccountCircle />
+                            </MenuItem>
+
+                        </div>
+                        <div className={classes.sectionMobile}>
+                            <IconButton
+                                aria-label="show more"
+                                aria-controls={mobileMenuId}
+                                aria-haspopup="true"
+                                onClick={handleMobileMenuOpen}
+                                color="inherit"
+                            >
+                                <MoreIcon />
+                            </IconButton>
+                        </div>
+                    </Toolbar>
+                </AppBar>
+                {renderMobileMenu}
+                {renderMenu}
+            </div >
+        </div>
     );
 }

@@ -23,9 +23,9 @@ function HomePage() {
             <Category />
 
             <AllCards />
-            <OurPolicies />
+            {/* <OurPolicies /> */}
             <Grid container className="mt-4">
-                <Grid item xs={12}>
+                <Grid item xs={12} justify="center" style={{margin: 'auto'}}>
                     <Typography variant="h4">
                         What People Say
           </Typography>
