@@ -14,7 +14,7 @@ const AllCards = (props) => {
   return (
     <div className="">
       <div className="mt-5 mb-3">
-        <Typography gutterBottom variant="h4" component="h2">
+        <Typography gutterBottom align="center" variant="h4" component="h2">
           Here is What's New
         </Typography>
         <Typography className="w-50 m-auto" variant="p" component="p">

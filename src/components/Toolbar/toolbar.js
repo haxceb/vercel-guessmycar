@@ -177,9 +177,9 @@ export default function PrimarySearchAppBar() {
     );
 
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="w-100">
-                <AppBar position="static">
+                <AppBar elevation={0} position="static">
                     <Toolbar>
                         <Avatar variant="square" style={{ width: 150 }} src={Logo} />
                         {/* <IconButton

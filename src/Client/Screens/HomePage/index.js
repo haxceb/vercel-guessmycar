@@ -10,6 +10,7 @@ import FooterAll from '../../../components/Footer/FooterAll';
 import { Grid, Typography } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
 import LoungeBankenImage from '../../../images/sofa3.jpg';
+import Policies from '../../Components/Policies/Policies';
 
 function HomePage() {
 	return (
@@ -21,12 +22,14 @@ function HomePage() {
 				</Grid>
 			</Grid>
 			<Category />
+            <div className="mt-5 mb-5"></div>
+            <Policies/>
 
 			<AllCards />
 			{/* <OurPolicies /> */}
 			<Grid container className="mt-4">
 				<Grid item xs={12}>
-					<Typography variant="h4">What People Say</Typography>
+					<Typography variant="h4" align="center">What People Say</Typography>
 				</Grid>
 				<Grid item xs={12}>
 					<Testimonials />
